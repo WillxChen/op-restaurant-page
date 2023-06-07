@@ -9,6 +9,10 @@
   color: white;
 }
 
+html {
+  scroll-behavior:smooth
+}
+
 body {
   background-color: black;
 }
@@ -187,9 +191,9 @@ section.about-page {
 section.menu-page {
   height: auto;
   padding-bottom: 100px;
+  padding-top: 75px;
 }
 section.menu-page h2 {
-  margin-top: 150px;
   font-size: 4rem;
   text-align: center;
 }
@@ -250,9 +254,12 @@ section.menu-page h2 {
 }
 
 /* Contact Page */
+section.contact-page {
+  padding-top: 100px;
+}
+
 section.contact-page h2 {
   text-align: center;
-  margin-top: 150px;
   font-size: 4rem;
 }
 
