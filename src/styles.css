@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Fondamento:ital@1&family=Noto+Sans+KR:wght@100;400;500&family=Petit+Formal+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* header {
+  height: 10vh;
+  background-color: darkslategray;
+  position: sticky;
+  top: 0;
+} */
+
+main {
+  height: 100vh;
+  color: white;
+}
+
+#content {
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+  background-color: black;
+}
+
+/* Header */
+header {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+}
+nav a:hover  {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* Landing */
+
+section.landing {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr) );
+  align-items: center;
+}
+
+section.landing h1 {
+  font-family: 'Fauna One', serif;
+  display: grid;
+  justify-content: end;
+  font-size: 4rem;
+} 
+
+.landing h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  display: grid;
+  justify-content: start;
+  text-align: center;
+  font-size: 4rem;
+} 
+
+.landing img {
+  grid-column: 2 / span 1;
+  grid-row: 1;
+  margin: 0 auto;
+  height: 600px;
+  width: auto;
+  filter: drop-shadow(0px 30px 12px #36363623); 
+}
+
+/* About Us */
+
+section.about-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(400px, 1.5fr) 2fr;
+  align-items: center;
+  background-color: black;
+  padding-left: 100px;
+  padding-right: 100px;
+  gap: 50px;
+}
+
+.about-page figure {
+  position: relative;
+  width: 100%;
+}
+
+.about-page figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  background-color:rgba(32, 28, 28, 0.185);
+  color: white;
+}
+
+.about-page figcaption a {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.about-page img {
+  width: 100%;
+  filter: grayscale(1);
+}
+
+.profile {
+  display: grid;
+}
+
+.profile > :first-child {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.profile p:nth-last-child(2) {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.profile .signature {
+  display: grid;
+  justify-content: end;
+  text-align: end;
+}
+
+.profile .signature  :first-child {
+  font-family: 'Petit Formal Script', cursive;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 400;
+
+}
+
+.profile p {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.0155rem;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.profile span {
+  font-family: 'Fauna One', serif;
+  font-size: 1.3rem;
+  padding: 0 5px;
+}
+
+/* Menu */
+section.menu-page {
+  height: auto;
+  padding-bottom: 100px;
+}
+section.menu-page h2 {
+  margin-top: 150px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.cocktail-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 30px;
+}
+
+.cocktails {
+  position: relative;
+  text-align: center;
+  border: 1px solid white;
+  padding: 50px;
+}
+
+.cocktails h3 {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+
+.drink > p:first-child {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.drink > p:last-child {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.alchemy {
+  margin-top: 100px;
+  max-width: 30%;
+  min-width: 50%;
+  margin: 0 auto;
+  grid-column: span 2;
+}
+
+.alchemy .drink {
+  display: grid;
+}
+
+.alchemy p:last-child {
+  max-width: 75ch;
+  margin: 0 auto;
+}
+
+/* Contact Page */
+section.contact-page h2 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 4rem;
+}
+
+.contact-info {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  margin: 100px 200px;
+  gap: 40px;
+}
+
+.map {
+  width: 640px;
+  height: 480px;
+}
+
+.contact-page iframe {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 8 / 6;
+}
+
+.details {
+  display: grid;
+  justify-self: start;
+  grid-template-rows: auto auto auto;
+}

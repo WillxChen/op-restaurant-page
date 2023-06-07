@@ -1,0 +1,23 @@
+{
+  "name": "op-restaurant-page",
+  "version": "1.0.0",
+  "description": "The Odin Project: Project: Restaurant Page <br>\r JavaScript Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillxChen/op-restaurant-page.git"
+  },
+  "author": "Will",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillxChen/op-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/WillxChen/op-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.85.1",
+    "webpack-cli": "^5.1.3"
+  }
+}
