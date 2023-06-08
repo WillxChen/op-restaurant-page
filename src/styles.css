@@ -10,7 +10,7 @@
 }
 
 html {
-  scroll-behavior:smooth
+  scrollbar-gutter: stable; 
 }
 
 body {
@@ -28,11 +28,6 @@ a {
   position: sticky;
   top: 0;
 } */
-
-main {
-  height: 100vh;
-  color: white;
-}
 
 #content {
   height: 100%;
@@ -116,6 +111,7 @@ section.about-page {
   background-color: black;
   padding-left: 100px;
   padding-right: 100px;
+  padding-top: 125px;
   gap: 50px;
 }
 
@@ -191,7 +187,7 @@ section.about-page {
 section.menu-page {
   height: auto;
   padding-bottom: 100px;
-  padding-top: 75px;
+  margin-top: 175px;
 }
 section.menu-page h2 {
   font-size: 4rem;
@@ -201,7 +197,7 @@ section.menu-page h2 {
 .cocktail-menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 200px;
   margin-right: 200px;
   gap: 30px;
@@ -255,7 +251,7 @@ section.menu-page h2 {
 
 /* Contact Page */
 section.contact-page {
-  padding-top: 100px;
+  padding-top: 175px;
 }
 
 section.contact-page h2 {
